@@ -24,6 +24,7 @@ namespace LINQProblems
         {
             var words = word;
             var WordsWithTh = words.Where(w => w.Contains("th"));
+            
             return WordsWithTh;
         }
         

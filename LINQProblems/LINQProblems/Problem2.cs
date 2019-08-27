@@ -22,9 +22,8 @@ namespace LINQProblems
         public IEnumerable<string> GetNames()
         {
             var names = name;
-            var noDuplicates = names.Select(n => n.Distinct());
+            var noDuplicates = names.Distinct();
             return noDuplicates;
-
         }
     }
 }
